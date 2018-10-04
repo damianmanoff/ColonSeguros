@@ -1,0 +1,17 @@
+{
+ "name": "test-aseguradora-colon-manoff",
+ "version": "1.0.0",
+ "dependencies": {
+  "body-parser": "^1.5.1",
+  "chai": "^4.2.0",
+  "cors": "^2.8.4",
+  "express": "^4.7.1",
+  "method-override": "^2.1.2",
+  "mocha": "^5.2.0",
+  "mongoose": "^5.3.0"
+ },
+ "scripts": {
+  "test": "mocha tests/**/**.spec.js",
+  "start": "node index.js"
+ }
+}
