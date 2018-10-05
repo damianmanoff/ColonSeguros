@@ -4,6 +4,7 @@ import './App.css';
 import DNA from './DNA';
 import DNAChain from './DNAChain';
 import MutantCheck from './MutantCheck';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class App extends Component {
 

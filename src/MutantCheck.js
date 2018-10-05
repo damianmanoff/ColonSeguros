@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button } from 'reactstrap';
 
 class MutantCheck extends Component {
 
@@ -48,7 +49,7 @@ class MutantCheck extends Component {
     	return (
       		<div class="checkMutant">
                 {this.props.showMe && (
-                    <button type="submit" className="btn nav-btn-red" onClick={this.handleClick}>ES MUTANTE??</button>
+                    <Button color="primary" type="submit"  onClick={this.handleClick}>¿ES MUTANTE?</Button>
                 )}
             </div> 
     	);

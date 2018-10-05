@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 class DNA extends Component {
 
@@ -28,13 +29,13 @@ class DNA extends Component {
 
   render() {
     return (
-      <form >
-        <label>
-          Ingrese la cadena de ADN:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <button onClick={this.handleClick}>Ingresar </button>
-      </form>
+      <Form inline>
+        <FormGroup>
+          <Label for="ADN" >Ingrese ADN</Label>
+          <Input type="text"  name="ADN" value={this.state.value} onChange={this.handleChange}/>
+        </FormGroup>
+        <Button onClick={this.handleClick} color="danger" >Ingresar</Button>
+      </Form>
     );
   }
 }
